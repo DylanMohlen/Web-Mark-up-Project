@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Dylan Mohlen website" />
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/Contact.css" />
+    <link
+      rel="icon"
+      href="/Web-markup assignment/img/logov1.png"
+      type="image"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Vibe Finders</h1>
+      <p class="city-name">Leiden</p>
+      <img src="img/logov1.png" alt="logo" class="logo" />
+    </header>
+
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="Page-1.html">Family</a>
+      <a href="Page-2.html">Views&Food</a>
+      <a href="Page-3.html">Chats&Vibes</a>
+      <a href="Page-4.html">Budget</a>
+      <a href="Page-5.html">Contact</a>
+    </nav>
+
+    <main>
+      <section class="contact-form-border">
+        <h3><strong>Contact Us</strong></h3>
+        <form action="index.html" method="post">
+          <legend>Get in Touch</legend>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            title="Enter your full name"
+            aria-label="Name"
+          />
+
+          <label for="email">Email address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            title="Enter your email address"
+            aria-label="Email address"
+          />
+
+          <label for="phone">Phone number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            title="Enter your phone number"
+            aria-label="Phone number"
+          />
+
+          <label for="title">Mr/Mrs:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            aria-label="Title (Mr or Mrs)"
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            aria-label="Your message"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>All Rights Reserved &copy; 2024</p>
+      <ul>
+        <li><a href="index.html">HomePage</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.625; 
+  background-color: #FFFFF0;
+  
+}
+.city-name {
+  color:#FFFFF0;
+  
+}
+
+p {
+  text-indent: 10px; 
+}
+
+p::first-letter {
+  font-size: 2rem;
+  color: #E2725B;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 36px; 
+  font-weight: 700;
+  background-color: #556B2F;
+  position: relative;
+}
+h1 {
+  letter-spacing: 2px; 
+}
+
+h2 {
+  word-spacing: 5px; 
+}
+
+.logo {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  height: 80px; 
+}
+
+.header h1 {
+  font-size: 2rem; 
+  color: #FFFFFF;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-around; 
+  background-color: #556B2F;
+  flex-wrap: wrap; 
+}
+
+.topnav a {
+  flex: 1; 
+  color: #f2f2f2;
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #E2725B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem; 
+}
+ 
+/* (hover) pseudo-class */
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a:active {
+  color: #555;
+}
+
+.topnav > a {
+  border: 1px solid #333;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px; 
+}
+
+.leftcolumn, .rightcolumn {
+  flex: 1;
+}
+
+.leftcolumn {
+  flex: 3; 
+  float: left;
+}
+
+.rightcolumn {
+  flex: 1; 
+}
+
+.card {
+  background-color: #FFFFF0;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 2px dashed #556B2F;
+}
+
+table tr:nth-child(even) {
+  background-color: #CFF;
+}
+
+table tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+.card h2 {
+  color: #333;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem; 
+}
+
+.images {
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+  position: relative;
+}
+
+.images img {
+  width: 100%; 
+  height: auto;
+  object-fit: cover; 
+}
+
+footer {
+  background-color: #55643E;
+  color: #FDFBEF;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+/* Smartphone Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px; 
+  }
+
+  .header h1 {
+    font-size: 1.5rem; 
+  }
+
+  .topnav a {
+    font-size: 0.875rem; 
+    padding: 10px; 
+  }
+
+  .logo {
+    height: 60px; 
+  }
+
+  .card h2 {
+    font-size: 1.5rem; 
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .leftcolumn, .rightcolumn {
+      flex: 0 0  100%; 
+  }
+
+  .images {
+      height: 200px; 
+  }
+}
+
+/* PC Styles */
+@media (min-width: 769px) {
+  .header h1 {
+      font-size: 2.5rem; 
+  }
+
+  .topnav a {
+      font-size: 1rem; 
+  }
+
+  .card h2 {
+      font-size: 2.5rem; 
+  }
+}
